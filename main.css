@@ -1,0 +1,54 @@
+* {
+    text-align: center;
+}
+body {
+    background-color: rgb(108, 127, 244);
+}
+h1 {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+canvas {
+    display: block;
+    margin: 0 auto;
+    outline: 1px solid black;
+    background-color: white;
+    cursor: crosshair;
+    border-radius: 20px;
+}
+.canvas-container {
+    background-color: rgb(32, 154, 83);
+    margin: 0 auto;
+    width: 70vw;
+    height: 75vh;
+    border-radius: 20px;
+}
+.panel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-input {
+    border: 1px solid red;
+    padding: 0.5vh;
+    margin: 10px;
+    font-size: 15px;
+}
+button {
+    padding: 1vh;
+    cursor: pointer;
+}
+.upload-btn {
+    background-color: rgb(8, 105, 190);
+}
+.dwn {
+    text-decoration: none;
+    border: 2px outset gray;
+    padding: 1vh;
+    color: black;
+    background-color: rgb(31, 210, 150);
+}
+#color {
+    height: 4vh;
+    cursor: pointer;
+}

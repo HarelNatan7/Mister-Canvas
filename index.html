@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Canvas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="onInIt()">
+    <h1>Mister Canvas Here</h1>
+    <section class="panel-container">
+        <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)">
+        <input type="color" name="color" id="color" onchange="onSetColor()">
+        <button onclick="setShape('text')">Text</button>
+        <button onclick="setShape('triangle')">Triangle</button>
+        <button onclick="setShape('rect')">Rect</button>
+        <button onclick="setShape('arc')">Arc</button>
+        <button onclick="setShape('line')">Line</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <button class="upload-btn" onclick="onUploadImg()">Upload</button>
+        <a href="#" class="dwn" onclick="downloadCanvas(this)" download="my-img">Download</a>
+    </section>
+    <div class="canvas-container">
+        <h3>Container</h3>
+        <canvas id="my-canvas" height="700" width="1077" onclick="draw(event)"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
